@@ -13,20 +13,96 @@
         <div id="dadosCadastrais">
             <label for="AreaDeClicagemDateDeNascimento">
                 Data De Nascimento
-                <input type="date" 
-                name="dateDeNascimento" 
-                id="dateDeNascimento">
+                <input type="date" name="dateDeNascimento" id="dateDeNascimento">
             </label>
             <label for="AreaDeClicagemNomeDoUsuario">
                 Nome Do Usuário
-                <input type="text" 
-                name="nomeDoUsuario" 
-                id="nomeDoUsuario">
+                <input type="text" name="nomeDoUsuario" id="nomeDoUsuario">
+            </label>
+            <label for="idadeDoUsuario">
+                Idade
+                <input type="number" name="idadeDoUsuario" id="idadeDoUsuario">
             </label>
         </div>
 
-        <div id="dadosDeEndereço">
+        <div id="dadosDeEnderecoEconjugue">
+            <div id="dadosDeEndereco">
+                <label for="enderecoDoUsuario">
+                    Cidade
+                    <input type="text" 
+                    name="enderecoDoUsuario" 
+                    id="enderecoDoUsuario">
+                </label>
+                <label for="cepDoUsuario">
+                    CEP
+                    <input type="number" 
+                    name="cepDoUsuario" 
+                    id="cepDoUsuario">
+                </label>
+                <label for="estadoDoUsuario">
+                    Estado
+                    <input type="text" 
+                    name="estadoDoUsuario" 
+                    id="estadoDoUsuario">
+                </label>
+                <input type="button" value="congelarDados">
+            </div>
+
+            <div id="dadosComplementaresDoUsuario">
+                <div id="situacaoDeConjugue">
+                    <p>Connjugue</p>
+                    <label for="situacaoDeCasado">
+                        Casado
+                        <input type="radio" 
+                        name="conjugue" 
+                        id="casado">
+                    </label>
+                    <label for="situacaoDeSolteiro">
+                        Solteiro
+                        <input type="radio" 
+                        name="conjugue" 
+                        id="solteiro">
+                    </label>
+                    <label for="situacaoViuvo">
+                        Viuvo
+                        <input type="radio" 
+                        name="conjugue" 
+                        id="viuvo">
+                    </label>
+                </div>
+            </div>
             
+            <div id="bensDoUsuario">
+                <label for="moradiaDoUsuario"
+                    >Casa ou Apartamento
+                    <input type="checkbox" 
+                    name="bensDoUsuario" 
+                    id="casaOuApartamento">
+                </label>
+                <label for="transporteDoUsuario"> 
+                    Carro ou moto
+                    <input type="checkbox" 
+                    name="bensDoUsuario" 
+                    id="transporteDoUsuario">
+                </label>
+                <label for="quantDeFilhos">
+                    Quantidade De Filhos
+                    <select name="quantDeFilhos">
+                        <option value="naoTemFilhos">0</option>
+                        <option value="ateDoisFilhos">0-2</option>
+                        <option value="ateCincoFilhos"> 2-5</option>
+                        <option value="ateSeteFilhos">5-7</option>
+                        <option value="maisDeSete">7- +</option>
+                       </select>
+                </label>
+
+                <div id="comentariosAdicionais">
+                    <input type="checkbox" name="comentariosAdicionais" id="comentariosAdicionais">
+                </div>
+
+                <input type="submit" value="enviar Dados">
+            </div>
+
         </div>
     </form>
 </section>
