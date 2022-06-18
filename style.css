@@ -1,0 +1,17 @@
+*{
+    body: 0px;
+    margin: 0px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.dadosCadastrais{
+    display: flex;
+    flex-direction: column;
+}
