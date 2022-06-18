@@ -5,58 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./main.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+
     <!-- <script defer src="./main.js"></script> -->
     <title>Formulário de Auxilio</title>
 
 </head>
 
 <body>
-
-    <section id="formularioTeste">
+    <section id="paginaPrincipal">
+    <h1>FORMULARIO AUXILIO CODIGOS DO AMANHA</h1>
         <form id="formularioPrincipal">
-            <h1>FORMULARIO AUXILIO CODIGOS DO AMANHA</h1>
             <div id="dadosCadastrais">
-                <div>
                 <label for="areaDeClicagemDataDeNascimento">
                     Data De Nascimento
                     <input type="date" name="dateDeNascimento" id="dateDeNascimento">
                 </label>
-                </div>
-                <div>
+             
+           
                 <label for="areaDeClicagemNomeDoUsuario">
                     Nome Do Usuário
                     <input type="text" name="nomeDoUsuario" id="nomeDoUsuario">
                 </label>
-                </div>
-                <div>
+            
+        
                 <label for="areaDeClicagemIdadeDoUsuario">
                     Idade
                     <input type="number" name="idadeDoUsuario" id="idadeDoUsuario">
                 </label>
-                </div>
             </div>
+            
 
             <div id="dadosComplementares">
                 <div id="dadosDeEndereco">
+                    
                     <label for="enderecoDoUsuario">
                         Cidade
                         <input type="text" name="enderecoDoUsuario" id="enderecoDoUsuario">
                     </label>
+                    <span id="espacamento"></span>
                     <label for="cepDoUsuario">
                         CEP
                         <input type="number" name="cepDoUsuario" id="cepDoUsuario">
                     </label>
+                    <span id="espacamento"></span>
                     <label for="estadoDoUsuario">
                         Estado
                         <input type="text" name="estadoDoUsuario" id="estadoDoUsuario">
                     </label>
+                    <span id="espacamento"></span>
                 </div>
 
-                <div id="estadoCivil">
 
+                <div id="estadoCivil">
                     <p><strong>STATUS</strong></p>
+                    <div>
                     <label for="situacaoCasado">
                         Casado
                         <input type="radio" value="casado" name="status" id="casado">
@@ -69,10 +73,14 @@
                         Viuvo
                         <input type="radio" value="viuvo" name="status" id="viuvo">
                     </label>
+                    </div>
                 </div>
 
-                <div id="bensDoUsuario">
 
+
+                <div id="bensDoUsuario">
+                    <p><strong>BENS MATERIAIS</strong></p>
+                    <div>
                     <label for="moradiaDoUsuario">
                         Casa
                         <input type="checkbox" name="bensDoUsuario" id="casa" value="casa">
@@ -95,7 +103,7 @@
                         <input type="checkbox" name="transporteDoUsuario" id="transporteMoto" value="moto">
                         <!-- mudar no do lucas -->
                     </label>
-
+                </div>
 
                 </div>
             </div>
@@ -103,11 +111,9 @@
         </form>
 
 
+
+
     </section>
-
-    </script>
-
-
 </body>
 
 </html>
